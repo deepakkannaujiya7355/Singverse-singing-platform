@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SingVerse - Your Voice, Your Stage</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+
+    background: #10101b;
+
+    color: white;
+
+}
+
+header {
+
+    background: #191929;
+
+    padding: 18px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 10;
+
+}
+
+.logo {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #ff4f9a;
+
+}
+
+nav {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 14px;
+
+}
+
+nav a:hover {
+
+    color: #ff4f9a;
+
+}
+
+section {
+
+    padding: 45px 8%;
+
+    scroll-margin-top: 75px;
+
+}
+
+.hero {
+
+    min-height: 430px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: linear-gradient(120deg, #24153d, #10101b);
+
+}
+
+.hero h1 {
+
+    font-size: 48px;
+
+    margin: 15px 0;
+
+}
+
+.hero span {
+
+    color: #ff4f9a;
+
+}
+
+.hero p {
+
+    color: #bbb;
+
+    line-height: 1.7;
+
+    max-width: 500px;
+
+}
+
+.hero-art {
+
+    font-size: 120px;
+
+    text-align: center;
+
+}
+
+button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ff4f9a;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    margin: 8px 5px 8px 0;
+
+}
+
+button:hover {
+
+    background: #a66bff;
+
+}
+
+h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+.description {
+
+    color: #aaa;
+
+    margin-bottom: 20px;
+
+}
+
+.container {
+
+    background: #1b1b2b;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-top: 20px;
+
+}
+
+input, textarea, select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    background: #10101b;
+
+    color: white;
+
+    border: 1px solid #444;
+
+    border-radius: 8px;
+
+}
+
+textarea {
+
+    min-height: 100px;
+
+}
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    gap: 20px;
+
+}
+
+.song-card {
+
+    background: #1b1b2b;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+}
+
+.cover {
+
+    background: linear-gradient(135deg, #8d3c9d, #ff4f9a);
+
+    height: 120px;
+
+    border-radius: 10px;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+
+}
+
+.song-card p {
+
+    color: #aaa;
+
+    margin: 10px 0;
+
+}
+
+audio {
+
+    width: 100%;
+
+    margin: 12px 0;
+
+}
+
+.status {
+
+    background: #29293b;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-top: 12px;
+
+    color: #ddd;
+
+}
+
+footer {
+
+    background: #191929;
+
+    text-align: center;
+
+    padding: 25px;
+
+    color: #aaa;
+
+}
+
+@media(max-width: 700px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .hero h1 {
+
+        font-size: 36px;
+
+    }
+
+    header {
+
+        gap: 15px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">SingVerse ♪</div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#explore">Explore</a>
+
+        <a href="#karaoke">Karaoke</a>
+
+        <a href="#studio">Studio</a>
+
+        <a href="#coach">AI Coach</a>
+
+        <a href="#profile">Profile</a>
+
+    </nav>
+
+</header>
+
+<!-- HOME SECTION -->
+
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>Your Voice.<br><span>Your Stage.</span></h1>
+
+        <p>
+
+            Welcome to SingVerse, an online singing platform
+
+            where music lovers can practise songs, record
+
+            performances and improve their singing skills.
+
+        </p>
+
+        <br>
+
+        <a href="#studio">
+
+            <button>Start Singing</button>
+
+        </a>
+
+        <a href="#explore">
+
+            <button>Explore Music</button>
+
+        </a>
+
+    </div>
+
+    <div class="hero-art">🎤 🎵</div>
+
+</section>
+
+<!-- EXPLORE SECTION -->
+
+<section id="explore">
+
+    <h2>Explore Songs</h2>
+
+    <p class="description">
+
+        Discover songs and choose your favourite genre.
+
+    </p>
+
+    <input
+
+        type="text"
+
+        id="search"
+
+        placeholder="Search songs..."
+
+        oninput="displaySongs()"
+
+    >
+
+    <select id="genre" onchange="displaySongs()">
+
+        <option value="All">All Genres</option>
+
+        <option value="Pop">Pop</option>
+
+        <option value="Rock">Rock</option>
+
+        <option value="Classical">Classical</option>
+
+        <option value="Indie">Indie</option>
+
+    </select>
+
+    <div class="grid" id="songList"></div>
+
+</section>
+
+<!-- KARAOKE SECTION -->
+
+<section id="karaoke">
+
+    <h2>Karaoke Room</h2>
+
+    <p class="description">
+
+        Upload your own audio and practise singing.
+
+    </p>
+
+    <div class="container">
+
+        <label>Choose an audio file</label>
+
+        <input
+
+            type="file"
+
+            id="audioFile"
+
+            accept="audio/*"
+
+        >
+
+        <audio id="audioPlayer" controls></audio>
+
+        <label>Write your lyrics or notes</label>
+
+        <textarea
+
+            id="lyrics"
+
+            placeholder="Write your lyrics here..."
+
+        ></textarea>
+
+        <button onclick="saveLyrics()">
+
+            Save Lyrics
+
+        </button>
+
+        <div id="karaokeStatus" class="status">
+
+            No audio selected.
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STUDIO SECTION -->
+
+<section id="studio">
+
+    <h2>Recording Studio</h2>
+
+    <p class="description">
+
+        Record your voice using your microphone.
+
+    </p>
+
+    <div class="container">
+
+        <button id="startBtn" onclick="startRecording()">
+
+            Start Recording
+
+        </button>
+
+        <button id="stopBtn" onclick="stopRecording()" disabled>
+
+            Stop Recording
+
+        </button>
+
+        <div id="recordStatus" class="status">
+
+            Ready to record.
+
+        </div>
+
+        <audio id="recordedAudio" controls></audio>
+
+        <button id="downloadBtn" onclick="downloadAudio()" disabled>
+
+            Download Recording
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- AI COACH SECTION -->
+
+<section id="coach">
+
+    <h2>AI Singing Coach</h2>
+
+    <p class="description">
+
+        Practise holding a steady note and get basic
+
+        microphone-based pitch feedback.
+
+    </p>
+
+    <div class="container">
+
+        <button id="coachBtn" onclick="toggleCoach()">
+
+            Start Pitch Check
+
+        </button>
+
+        <div id="pitchResult" class="status">
+
+            Your pitch feedback will appear here.
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROFILE SECTION -->
+
+<section id="profile">
+
+    <h2>My Profile</h2>
+
+    <p class="description">
+
+        Create your personal singing profile.
+
+    </p>
+
+    <div class="container">
+
+        <label>Your Name</label>
+
+        <input
+
+            type="text"
+
+            id="userName"
+
+            placeholder="Enter your name"
+
+        >
+
+        <label>Favourite Genre</label>
+
+        <select id="userGenre">
+
+            <option>Pop</option>
+
+            <option>Rock</option>
+
+            <option>Classical</option>
+
+            <option>Indie</option>
+
+        </select>
+
+        <label>About You</label>
+
+        <textarea
+
+            id="userBio"
+
+            placeholder="Tell us about yourself..."
+
+        ></textarea>
+
+        <button onclick="saveProfile()">
+
+            Save Profile
+
+        </button>
+
+        <div id="profileStatus" class="status">
+
+            Your profile is stored on this device.
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>SingVerse ♪</h3>
+
+    <p>Your Voice. Your Music. Your Stage.</p>
+
+    <p>© 2026 SingVerse. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+// SONG DATABASE
+
+const songs = [
+
+    {
+
+        name: "Acoustic Dreams",
+
+        artist: "Demo Artist",
+
+        genre: "Indie",
+
+        emoji: "🎸"
+
+    },
+
+    {
+
+        name: "Midnight Lights",
+
+        artist: "Demo Artist",
+
+        genre: "Pop",
+
+        emoji: "🌙"
+
+    },
+
+    {
+
+        name: "Power Notes",
+
+        artist: "Demo Artist",
+
+        genre: "Rock",
+
+        emoji: "⚡"
+
+    },
+
+    {
+
+        name: "Classical Journey",
+
+        artist: "Demo Artist",
+
+        genre: "Classical",
+
+        emoji: "🎻"
+
+    },
+
+    {
+
+        name: "Open Sky",
+
+        artist: "Demo Artist",
+
+        genre: "Pop",
+
+        emoji: "☁️"
+
+    }
+
+];
+
+const $ = id => document.getElementById(id);
+
+// DISPLAY SONGS
+
+function displaySongs() {
+
+    let search = $("search").value.toLowerCase();
+
+    let genre = $("genre").value;
+
+    let result = songs.filter(song => {
+
+        return song.name.toLowerCase().includes(search)
+
+        && (genre === "All" || song.genre === genre);
+
+    });
+
+    $("songList").innerHTML = result.map(song => `
+
+        <div class="song-card">
+
+            <div class="cover">${song.emoji}</div>
+
+            <h3>${song.name}</h3>
+
+            <p>${song.artist} · ${song.genre}</p>
+
+            <button onclick="selectSong('${song.name}')">
+
+                Practise
+
+            </button>
+
+        </div>
+
+    `).join("") || "<p>No songs found.</p>";
+
+}
+
+function selectSong(name) {
+
+    document.getElementById("karaoke").scrollIntoView();
+
+    $("karaokeStatus").textContent =
+
+        name + " selected. Upload your audio to practise.";
+
+}
+
+// KARAOKE AUDIO UPLOAD
+
+$("audioFile").addEventListener("change", function(event) {
+
+    let file = event.target.files[0];
+
+    if(file) {
+
+        $("audioPlayer").src = URL.createObjectURL(file);
+
+        $("karaokeStatus").textContent =
+
+            "Audio loaded: " + file.name;
+
+    }
+
+});
+
+// SAVE LYRICS
+
+function saveLyrics() {
+
+    localStorage.setItem(
+
+        "singverseLyrics",
+
+        $("lyrics").value
+
+    );
+
+    $("karaokeStatus").textContent =
+
+        "Your lyrics have been saved.";
+
+}
+
+// VOICE RECORDING
+
+let recorder;
+
+let recordingBlob;
+
+let microphone;
+
+async function startRecording() {
+
+    try {
+
+        microphone =
+
+            await navigator.mediaDevices.getUserMedia({
+
+                audio: true
+
+            });
+
+        let chunks = [];
+
+        recorder = new MediaRecorder(microphone);
+
+        recorder.ondataavailable = function(event) {
+
+            if(event.data.size > 0) {
+
+                chunks.push(event.data);
+
+            }
+
+        };
+
+        recorder.onstop = function() {
+
+            recordingBlob = new Blob(chunks, {
+
+                type: recorder.mimeType || "audio/webm"
+
+            });
+
+            $("recordedAudio").src =
+
+                URL.createObjectURL(recordingBlob);
+
+            $("downloadBtn").disabled = false;
+
+            microphone.getTracks().forEach(track => track.stop());
+
+            $("recordStatus").textContent =
+
+                "Recording completed successfully!";
+
+        };
+
+        recorder.start();
+
+        $("startBtn").disabled = true;
+
+        $("stopBtn").disabled = false;
+
+        $("recordStatus").textContent = "Recording started...";
+
+    } catch(error) {
+
+        $("recordStatus").textContent =
+
+            "Microphone permission denied or unavailable. Use HTTPS or localhost.";
+
+    }
+
+}
+
+function stopRecording() {
+
+    if(recorder && recorder.state !== "inactive") {
+
+        recorder.stop();
+
+        $("startBtn").disabled = false;
+
+        $("stopBtn").disabled = true;
+
+    }
+
+}
+
+// DOWNLOAD RECORDING
+
+function downloadAudio() {
+
+    if(!recordingBlob) return;
+
+    let link = document.createElement("a");
+
+    link.href = URL.createObjectURL(recordingBlob);
+
+    link.download = "SingVerse-Recording.webm";
+
+    link.click();
+
+}
+
+// BASIC PITCH COACH
+
+let coachStream;
+
+let coachTimer;
+
+let audioContext;
+
+async function toggleCoach() {
+
+    if(coachStream) {
+
+        clearInterval(coachTimer);
+
+        coachStream.getTracks().forEach(track => track.stop());
+
+        if(audioContext) audioContext.close();
+
+        coachStream = null;
+
+        $("coachBtn").textContent = "Start Pitch Check";
+
+        $("pitchResult").textContent = "Pitch check stopped.";
+
+        return;
+
+    }
+
+    try {
+
+        coachStream =
+
+            await navigator.mediaDevices.getUserMedia({
+
+                audio: true
+
+            });
+
+        audioContext = new AudioContext();
+
+        let analyser = audioContext.createAnalyser();
+
+        analyser.fftSize = 2048;
+
+        let source =
+
+            audioContext.createMediaStreamSource(coachStream);
+
+        source.connect(analyser);
+
+        let data = new Float32Array(analyser.fftSize);
+
+        $("coachBtn").textContent = "Stop Pitch Check";
+
+        coachTimer = setInterval(function() {
+
+            analyser.getFloatTimeDomainData(data);
+
+            let energy = Math.sqrt(
+
+                data.reduce((sum, value) =>
+
+                    sum + value * value, 0) / data.length
+
+            );
+
+            if(energy < 0.012) {
+
+                $("pitchResult").textContent =
+
+                    "No clear note detected. Try singing closer.";
+
+                return;
+
+            }
+
+            let crossings = 0;
+
+            for(let i = 1; i < data.length; i++) {
+
+                if(data[i - 1] <= 0 && data[i] > 0) {
+
+                    crossings++;
+
+                }
+
+            }
+
+            let pitch =
+
+                crossings * audioContext.sampleRate /
+
+                (2 * data.length);
+
+            if(pitch > 70 && pitch < 1000) {
+
+                $("pitchResult").textContent =
+
+                    "Sound detected! Estimated pitch: " +
+
+                    Math.round(pitch) +
+
+                    " Hz. Try holding the note steadily.";
+
+            } else {
+
+                $("pitchResult").textContent =
+
+                    "Sound detected. Try a clear, sustained note.";
+
+            }
+
+        }, 700);
+
+    } catch(error) {
+
+        $("pitchResult").textContent =
+
+            "Microphone access failed. Allow microphone permission.";
+
+        coachStream = null;
+
+    }
+
+}
+
+// PROFILE MANAGEMENT
+
+function saveProfile() {
+
+    let profile = {
+
+        name: $("userName").value,
+
+        genre: $("userGenre").value,
+
+        bio: $("userBio").value
+
+    };
+
+    localStorage.setItem(
+
+        "singverseProfile",
+
+        JSON.stringify(profile)
+
+    );
+
+    $("profileStatus").textContent =
+
+        "Welcome, " + (profile.name || "Singer") +
+
+        "! Your profile is saved.";
+
+}
+
+// LOAD SAVED DATA
+
+function loadData() {
+
+    let profile = JSON.parse(
+
+        localStorage.getItem("singverseProfile") || "{}"
+
+    );
+
+    $("userName").value = profile.name || "";
+
+    $("userGenre").value = profile.genre || "Pop";
+
+    $("userBio").value = profile.bio || "";
+
+    $("lyrics").value =
+
+        localStorage.getItem("singverseLyrics") || "";
+
+}
+
+// INITIALIZE WEBSITE
+
+displaySongs();
+
+loadData();
+
+</script>
+
+</body>
+
+</html>
